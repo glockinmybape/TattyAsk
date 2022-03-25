@@ -1,0 +1,9 @@
+org\glockinmybape\tattyask\commands\TattyAskCommand.class
+org\glockinmybape\tattyask\commands\AnswerCommand.class
+org\glockinmybape\tattyask\listeners\OnJoinListener.class
+org\glockinmybape\tattyask\types\Question.class
+org\glockinmybape\tattyask\utils\Storage.class
+org\glockinmybape\tattyask\utils\TattyUtils.class
+org\glockinmybape\tattyask\TattyAsk.class
+org\glockinmybape\tattyask\commands\AskCommand.class
+org\glockinmybape\tattyask\commands\CommentCommand.class

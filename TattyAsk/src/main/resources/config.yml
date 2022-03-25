@@ -1,0 +1,53 @@
+# Плагин: TattyAsk v1.0
+#  Студия: TattyInc
+#
+# Команды:
+#   /ask <Вопрос> - Задать вопрос
+#   /answer <ID> <Ответ> - Ответить на вопрос
+#   /answer list - Узнать список открытых вопросов
+#   /comment <ID> <Комментарий> - Оставить комментарий на вопрос
+#   /tattyask <reload/help/info> - Перезагрузить плагин/Показать помощь/Показать информацию
+#
+settings:
+  plugin-prefix: "&c&lПОМОЩЬ &8»"
+  answer-permission: "tattyask.answer" # Даёт доступ к /answer
+  enigma-permission: "tattyask.enigma" # Даёт доступ к /dizzenzioask reload/help/info
+  comment-permission: "tattyask.answer" # Даёт доступ к /comment
+  ask-permission: "tattyask.ask" # Даёт доступ к /ask
+  join-message-permission: "tattyask.joinmessage" # После входа в игру, будет выведено сообщение с информацией о вопросах
+  new-question-alert-permission: "tattyask.alert" # Оповещает игрока, когда приходит новый вопрос/комментарий
+  questions-limit: 100 # Лимит открытых вопросов
+
+messages:
+  no-perms: "%prefix% &cНедостаточно прав."
+  on-moder-join:
+    - "%prefix% &fДобро пожаловать, &c%player%."
+    - "%prefix% &fВ данный момент открыто &c%count% &fвопросов"
+  ask-usage: "%prefix% &fИспользование: &c/ask <Вопрос>"
+  comment-usage: "%prefix% &fИспользование: &c/comment <ID> <Комментарий>"
+  enigma-usage: "%prefix% &fИспользование: &c/tattyask <help/info/reload>"
+  too-many-questions: "%prefix% &fИзвините, в данный момент слишком много открытых вопросов."
+  question-send: "%prefix% &fВаш вопрос задан, ожидайте ответа от Администратора!"
+  new-question: "%prefix% &fИгрок &c%player% &fзадал вопрос &c'%question%' &fID: &c#%id%"
+  already-have-question: "%prefix% &cУ вас уже открыт вопрос. Подождите, пока на него будет дан ответ."
+  questions-list: "%prefix% &fСписок открытых вопросов: "
+  questions-list-pattern: "&c(#%id%) &f%question% &7(%player%)"
+  no-open-questions: "%prefix% &fВ данный момент нет открытых вопросов."
+  no-valid-id: "%prefix% &cНеверно указан ID!"
+  question-not-found: "%prefix% &cВопрос с данным ID не найден!"
+  question-answered: "%prefix% &fАдминистратор &c%admin% &fответил на ваш вопрос: &c%answer%"
+  question-answered-admins: "%prefix% &fАдминистратор &c%admin% &fответил на &c#%id%&f: &c%answer%"
+  question-commented: "%prefix% &fАдминистратор &c%admin% &fпрокомментировал ваш вопрос: &c%answer%"
+  question-commented-admins: "%prefix% &fАдминистратор &c%admin% &fпрокомментировал &c#%id%&f: &c%answer%"
+  plugin-reloaded: "%prefix% &aПлагин успешно перезагружен!"
+  help-message:
+    - "&c⎛"
+    - "&c⎜ %prefix% &fПомощь по командам: "
+    - "&c⎜  &f/answer <ID> <Ответ> - &7Ответить на заданный вопрос."
+    - "&c⎜  &f/answer list - &7Вывести список открытых вопросов."
+    - "&c⎜  &f/ask <Вопрос> - &7Задать вопрос Администрации."
+    - "&c⎜  &f/comment <ID> <Комментарий> - &7Оставить комментарий к вопросу."
+    - "&c⎜  &f/tattyask reload - &7Перезагрузить плагин."
+    - "&c⎜  &f/tattyask help - &7Вывести это сообщение."
+    - "&c⎜  &f/tattyask info - &7Вывести информацию по плагину."
+    - "&c⎝"

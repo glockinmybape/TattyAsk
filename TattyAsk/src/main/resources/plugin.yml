@@ -1,0 +1,18 @@
+name: TattyAsk
+version: '1.0'
+main: org.glockinmybape.tattyask.TattyAsk
+authors: [ glockinmybape ]
+description: glockinmybape
+commands:
+  ask:
+    description: Asks a question.
+    usage: /ask [question]
+  answer:
+    description: Answers a question
+    usage: /answer [question] <answer>
+  comment:
+    description: Comments on a question
+    usage: /comment <id> [comment]
+  tattyask:
+    description: Main command of plugin
+    usage: /tattyask <help/info/reload>
